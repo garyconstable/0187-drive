@@ -1,0 +1,48 @@
+
+/*******************************************************************************
+Buttons
+--
+@author Gary Constable <garyconstable80@gmail.com>
+*******************************************************************************/
+
+.btn{
+  &.btn-default{
+    background: transparent;
+    color:white;
+    font-size: 18px;
+    line-height: calc(18px * 1.5);
+    border: solid 1px white;
+    transition: all 300ms ease;
+    &:hover{
+      color: black;
+      border-color: black;
+    }
+    &.blue{
+      border: solid 1px $blue;
+      color:$blue;
+      &:hover{
+        color: black;
+        border-color: black;
+      }
+    }
+  }
+}
+
+.more-projects{
+  margin: auto;
+  display: block;
+  max-width: 200px;
+}
+
+.Wallop{
+  .btn{
+    &.btn-default{
+      font-size: 16px;
+      line-height: calc(16px * 1.5);
+      @media (min-width: 768px){
+        font-size: 20px;
+        line-height: calc(20px * 1.5);
+      }
+    }
+  }
+}

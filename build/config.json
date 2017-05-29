@@ -1,0 +1,39 @@
+{
+	"projectName": "drive-creative",
+	"browserSync": {
+		"host": "drive.dev",
+		"watch": [
+			"index.hbs"
+		]
+	},
+	"watch": [
+    {
+			"pattern": "sass/*.scss",
+			"tasks": ["rebuild-css"]
+		},
+		{
+			"pattern": "sass/**/*.scss",
+			"tasks": ["rebuild-css"]
+		},
+		{
+			"pattern": "js/*.js",
+			"tasks": ["rebuild-js"]
+		}
+	],
+	"sassOptions": {
+		"outputStyle": "compressed"
+	},
+	"stripDebug": true,
+	"sourceMaps": false,
+	"jshints": true,
+	"uglifyOptions": {
+		"mangle": false
+	},
+	"paths": {
+		"assets" : "/public/assets",
+		"css" : "{assets}/css",
+		"images" : "{assets}/images",
+		"js" : "{assets}/js",
+		"vendor" : "{assets}/js/vendor"
+	}
+}

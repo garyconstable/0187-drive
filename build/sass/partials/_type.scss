@@ -1,0 +1,44 @@
+
+/*******************************************************************************
+Type / text
+--
+@author Gary Constable <garyconstable80@gmail.com>
+*******************************************************************************/
+
+.font-smoothing{
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.font1{
+  @extend .font-smoothing;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.font2{
+  @extend .font-smoothing;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-title{
+  @extend .font2;
+  font-size: 18px;
+  line-height: calc(16px * 1.5);
+  @media (min-width: 768px){
+    font-size: 23px;
+    line-height: calc(23px * 1.5);
+    max-width: 65%;
+    margin: auto;
+  }
+}
+
+.sub-title{
+  @extend .font1;
+  font-size: 28px;
+  line-height: calc(28px * 1.5);
+  @media (min-width: 768px){
+    font-size: 38px;
+    line-height: calc(38px * 1.5);
+  }
+}

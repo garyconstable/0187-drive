@@ -1,0 +1,7 @@
+build/node_modules/*
+build/tmp/*
+build/yarn.lock
+!build/package.json
+public/assets/build/*.js
+public/assets/build/*.css
+.DS_Store
