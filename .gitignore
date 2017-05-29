@@ -5,3 +5,4 @@ build/yarn.lock
 public/assets/build/*.js
 public/assets/build/*.css
 .DS_Store
+public/index.html
