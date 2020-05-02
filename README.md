@@ -26,7 +26,6 @@ gulp serve
   + Changes to Sass files will be compiles in to global.css
   + Changes to JS files will be compiles in to global.js
 + Images / fonts are included in the repo.
-+ You can preview the homepage here: http://dev2.garyconstable.co.uk/
 + You will need to follow the above to generate the CSS / JS & index.html files.
 + Occasionally a blank JS file, is created, try restarting gulp serve, or re saving the main JS file.
 
